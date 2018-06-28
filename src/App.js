@@ -3,6 +3,7 @@ import logo from './logo.svg';
 // import './App.css';
 import Test from './components/test/test'
 import Container from "./components/buttonBlock/container";
+import Checkbox from "./components/checkbox/checkbox";
 
 class App extends Component {
   render() {
@@ -23,9 +24,11 @@ class App extends Component {
           {/*<Test name="Dota 2" age="14+" />*/}
           {/*<Test name="CS GO" age="15+" />*/}
           {/*<Test name="Portal" age="18+" />*/}
-          <Container> first </Container>
-          <Container> second </Container>
-          <Container> three </Container>
+          {/*<Container> first </Container>*/}
+          {/*<Container> second </Container>*/}
+          {/*<Container> three </Container>*/}
+
+          <Checkbox />
       </div>
     );
   }
