@@ -3,7 +3,7 @@ footer{
     font-size: 1.4em;
     font-family: 'Arial';
     color: white;
-    background: #000;
+    background: rgba(0,0,0,.6);
 }
 
 address{
