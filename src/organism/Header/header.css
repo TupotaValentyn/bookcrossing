@@ -1,8 +1,12 @@
+*{
+    outline: none;
+}
+
 header{
     color: white;
-    background: url('../../assets/228.png');
-    background-position: center;
-    background-size: cover;
+    /*background: url('../../assets/228.png');*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
 }
 
 .header__navigation__top{
@@ -35,5 +39,24 @@ header{
 .navigation__logo__left{
     margin: 0 .5em;
     cursor: pointer;
+}
 
+.video-react-big-play-button, .video-react-control-text, .video-react-control-bar{
+  display: none;
+}
+
+.header__player{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-react-controls-enabled{
+    padding: 0 !important;
+}
+
+video{
+    height: 100vh !important;
+    width: 100vw !important;
 }

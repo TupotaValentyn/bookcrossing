@@ -1,11 +1,25 @@
 import React from 'react'
 import './header.css'
+import Video from '../../assets/video/Honeymoon.mp4'
 
-import { Player } from 'video-react';
+import { Player, ControlBar } from 'video-react';
 import Nav from '../nav/Navigation'
+
+const sources = {
+  bunnyMovie: Video,
+};
+
 
 
 class Header extends React.Component{
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      source: sources['bunnyMovie'],
+    };
+  }
+
   render(){
     return (
     <header>
@@ -18,9 +32,12 @@ class Header extends React.Component{
           <input type="text" id='search' />
         </div>
       </div>
-      {/*<Player>*/}
-        {/*<source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />*/}
-      {/*</Player>*/}
+      <div className='header__player'>
+        <Player ref="player" autoPlay muted loop>
+          <source src={this.state.source}  />
+          <ControlBar autoHide={true} disableCompletely = {false}/>
+        </Player>
+      </div>
 
     </header>
     )
