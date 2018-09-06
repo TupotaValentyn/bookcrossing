@@ -1,0 +1,22 @@
+nav{
+    display: grid;
+    justify-content: end;
+    position: relative;
+    right: 100px;
+}
+
+nav .navigation__list{
+    list-style: none;
+
+}
+
+nav .navigation__list li{
+    display: inline-block;
+    margin: .3em;
+}
+
+nav .navigation__list li a{
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: white;
+}

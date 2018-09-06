@@ -1,9 +1,13 @@
 import React from  'react'
+import './Inforamation.css'
 
 class Information extends React.Component{
   render(){
     return(
-      <h1>this is - Information</h1>
+      <div className='information__content'>
+        <h1>this is - Information</h1>
+      </div>
+
     )
   }
 }

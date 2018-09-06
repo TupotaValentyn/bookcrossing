@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route, NavLink} from 'react-router-dom'
 import './App.css'
-// import Footer from './organism/Footer/Footer'
+import Footer from './organism/Footer/Footer'
 import Header from './organism/Header/Header'
 import notFound from './notFound'
 import Home from './page/Home/Home'
@@ -23,6 +23,7 @@ class App extends React.Component {
             <Route component={notFound} />
           </Switch>
         </main>
+        <Footer />
       </div>
     );
   }

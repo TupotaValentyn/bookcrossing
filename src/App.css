@@ -9,3 +9,13 @@
 ::before, ::after, :hover{
     transition: all 1s ease;
 }
+
+body{
+    overflow: hidden scroll;
+}
+
+.wrapper{
+    display: grid;
+    grid: 100vh 1fr 40px / 1fr;
+    width: 100vw;
+}

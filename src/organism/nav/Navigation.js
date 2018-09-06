@@ -1,5 +1,6 @@
 import React from 'react'
 import Li from '../../molecules/Li/Li'
+import './Navigation.css'
 
 const dataNav = [
   {
