@@ -4,6 +4,8 @@ import './header.css'
 // fontAwsome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faAddressCard } from '@fortawesome/free-solid-svg-icons'
+//Form
+import Form from './../Form/Form'
 //Video
 import Videvo from '../../assets/video/Videvo.mov'
 import { Player, ControlBar } from 'video-react';
@@ -50,6 +52,9 @@ class Header extends React.Component{
       </div>
       <div className='header__content__center'>
         <h1>Lorem ipsum dolor sit amet.</h1>
+      </div>
+      <div className='header__form'>
+        <Form />
       </div>
 
     </header>

@@ -18,10 +18,15 @@ header{
 }
 
 .navigation__search__right{
+    height: 40px;
     display: grid;
     justify-content: end;
     position: relative;
-    right: 2em;
+    right: 250px;
+}
+
+.header__fontAwesome__Search{
+
 }
 
 .header__fontAwesome__Search, .header__fontAwesome__Card{
@@ -34,6 +39,13 @@ header{
 
 .navigation__icon{
     display: block;
+    width: 100%;
+    height: 40px;
+    border-left: 1px solid red;
+}
+
+.navigation__icon h1{
+    height: 40px;
 }
 
 .header__fontAwesome__Search:hover{
@@ -74,7 +86,7 @@ header{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1;
+    z-index: -2;
     transform-style: preserve-3d;
     perspective: 1px;
 
