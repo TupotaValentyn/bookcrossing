@@ -87,9 +87,6 @@ header{
     height: 100vh;
     overflow: hidden;
     z-index: -2;
-    transform-style: preserve-3d;
-    perspective: 1px;
-
 }
 
 .video-react-controls-enabled{
@@ -117,8 +114,6 @@ header{
     align-items: center;
     justify-content: center;
     z-index: 2;
-
-
 }
 
 .header__content__center h1{

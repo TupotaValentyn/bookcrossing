@@ -54,7 +54,7 @@ class Header extends React.Component{
         <h1>Lorem ipsum dolor sit amet.</h1>
       </div>
       <div className='header__form'>
-        <Form />
+        {/*<Form />*/}
       </div>
 
     </header>
