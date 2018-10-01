@@ -1,47 +1,10 @@
-body{
+*{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  transition: all 1s ease;
+  clear: both;
+
+  /*transition: all 1s ease;*/
 }
 
-.wrapper{
-  display: grid;
-  width: 100vw;
-  height: 200vh;
-  grid-template-areas:  "header header header"
-                        "main main main"
-                        "footer footer footer";
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 95% 100vh 70px;
-}
 
-header, main, footer{
-  display: grid;
-}
-
-header{
-  grid-area: header;
-  width: 100vw; height: 100vh;
-  background: url('./assets/main-bg.jpg') no-repeat;
-  background-size: 100% 95%;
-  justify-content: center;
-  align-content: center;
-}
-
-main{
-  grid-area: main;
-}
-
-footer{
-  grid-area: footer;
-  justify-content: center;
-  align-items: center;
-}
-
-h1{
-  color: #ff7373;
-  font-size: 5em;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-}

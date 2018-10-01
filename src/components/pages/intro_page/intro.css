@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    grid: 100vh 1fr 50px/ 1fr;
+    width: 100vw; height: 400vh;
+}
+.container header{
+    display: grid;
+    /*background-image: url('./../../../assets/main-bg.jpg');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: end;
+    align-items: start;
+}
+
+.container footer{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+
+.container header nav{
+    position: relative;
+    right: 100px;
+}
+
+.container header nav ol{
+    list-style: none;
+}
+.container header nav ol li{
+    display: inline-block;
+    margin: .5em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+}
+
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}

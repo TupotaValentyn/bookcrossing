@@ -1,0 +1,5 @@
+header{
+    display: grid;
+    grid: 100%/ 200px 1fr 200px;
+    background: #f2f2f2;
+}
