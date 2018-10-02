@@ -1,10 +1,22 @@
 *{
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  clear: both;
-
-  /*transition: all 1s ease;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    clear: both;
 }
 
+::before, ::after, :hover{
+    transition: all .5s ease;
+}
 
+body{
+    overflow: hidden scroll;
+    /*perspective: 1px;*/
+}
+
+.wrapper{
+    display: grid;
+    grid: 100vh 1fr 40px / 1fr;
+    width: 100vw;
+}
