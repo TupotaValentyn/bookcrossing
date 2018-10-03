@@ -1,13 +1,14 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom'
 import './App.css'
-import Footer from './organism/Footer/Footer'
-import Header from './organism/Header/Header'
+import Footer from './components/organism/Footer/Footer'
+import Header from './components/organism/Header/Header'
 import notFound from './notFound'
-import Home from './page/Home/Home'
-import Catalog from './page/Catalog/Catalog'
-import Information from './page/Information/Information'
-import About from './page/About/About'
+import Home from './components/pages/Home/Home'
+import Catalog from './components/pages/Catalog/Catalog'
+import Information from './components/pages/Information/Information'
+import About from './components/pages/About/About'
+
 
 class App extends React.Component {
   render() {
@@ -24,6 +25,8 @@ class App extends React.Component {
           </Switch>
         </main>
         <Footer />
+
+         {/*<Login />*/}
       </div>
     );
   }

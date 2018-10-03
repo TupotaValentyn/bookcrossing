@@ -1,16 +1,14 @@
 import React from 'react'
 import './header.css'
-// import Video from '../../assets/video/Honeymoon.mp4'
 // fontAwsome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faAddressCard } from '@fortawesome/free-solid-svg-icons'
 //Form
-import Form from './../Form/Form'
 //Video
-import Videvo from '../../assets/video/Videvo.mov'
-import { Player, ControlBar } from 'video-react';
+import Videvo from '../../../assets/video/Videvo.mov'
 //Navigation
 import Nav from '../nav/Navigation'
+import PlayeR from '../../molecules/Player/PlayeR'
 
 const sources = {
   bunnyMovie: Videvo,
@@ -44,12 +42,7 @@ class Header extends React.Component{
           </div>
         </div>
       </div>
-      <div className='header__player'>
-        <Player ref="player" autoPlay muted loop>
-          <source src={this.state.source}  />
-          <ControlBar autoHide={true} disableCompletely = {false}/>
-        </Player>
-      </div>
+      <PlayeR />
       <div className='header__content__center'>
         <h1>Lorem ipsum dolor sit amet.</h1>
       </div>

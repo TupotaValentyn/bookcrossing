@@ -1,7 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './Point.css'
 
-class  Li extends React.Component {
+class Point extends React.Component {
   render(){
     return(
       <li><NavLink to={this.props.way}>{this.props.text}</NavLink></li>
@@ -9,4 +10,4 @@ class  Li extends React.Component {
   }
 }
 
-export default Li;
+export default Point;

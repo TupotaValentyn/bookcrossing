@@ -1,5 +1,5 @@
 import React from 'react'
-import Li from '../../molecules/Li/Li'
+import Point from '../../molecules/Point/Point'
 import './Navigation.css'
 
 const dataNav = [
@@ -30,7 +30,7 @@ class  Navigation extends  React.Component{
           {
             dataNav.map((item,index) => {
               return (
-                <Li way={item.way} text={item.text} key={index} />
+                <Point way={item.way} text={item.text} key={index} />
               )
             })
           }
