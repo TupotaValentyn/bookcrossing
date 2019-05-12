@@ -1,9 +1,9 @@
-import React from  'react'
+import React, { Component } from 'react'
 import './about.css'
 
-class About extends React.Component{
-  render(){
-    return(
+class About extends Component {
+  render () {
+    return (
       <div className='about__content'>
         <h1>this is - About</h1>
       </div>
@@ -11,4 +11,4 @@ class About extends React.Component{
   }
 }
 
-export default About;
+export default About
